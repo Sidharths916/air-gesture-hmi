@@ -160,7 +160,7 @@ Canvas pixels → height-map geometry → triangle mesh
 
 ```bash
 
-git clone https://github.com/YOUR\_USERNAME/air-gesture-hmi.git
+git clone https://github.com/Sidharths916/air-gesture-hmi.git
 
 cd air-gesture-hmi
 
@@ -198,7 +198,7 @@ python main.py
 
 &#x20; year   = {2026},
 
-&#x20; url    = {https://github.com/YOUR\_USERNAME/air-gesture-hmi}
+&#x20; url    = {https://github.com/Sidharths916/air-gesture-hmi}
 
 }
 
