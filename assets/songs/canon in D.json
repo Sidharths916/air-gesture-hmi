@@ -1,0 +1,16 @@
+{
+  "title": "Canon in D",
+  "instrument": "violin",
+  "bpm": 80,
+  "tracks": [
+    {
+      "hand": "right",
+      "notes": [
+        {"note": "F#5", "start_beat": 0.0, "duration": 2.0},
+        {"note": "E5", "start_beat": 2.0, "duration": 2.0},
+        {"note": "D5", "start_beat": 4.0, "duration": 2.0},
+        {"note": "C#5", "start_beat": 6.0, "duration": 2.0}
+      ]
+    }
+  ]
+}

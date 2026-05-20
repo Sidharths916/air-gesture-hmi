@@ -1,0 +1,10 @@
+{
+  "title": "Blue Bird",
+  "structure": ["Chorus Hook", "Verse 1", "Pre-Chorus", "Chorus", "Verse 2", "Bridge", "Final Chorus"],
+  "full_progression": [
+    {"section": "Chorus Hook", "chords": ["D", "E/D", "C#m7", "F#m", "Bm7", "C#7", "F#m7"]},
+    {"section": "Verse 1", "lyrics": "Kanashimi wa mada oboerarezu...", "chords": ["F#m", "A/E", "D", "A/C#", "Bm", "A", "G#dim", "C#7"]},
+    {"section": "Verse 2", "lyrics": "Aisou tsuki dayo onna oto de...", "chords": ["F#m", "A/E", "D", "A/C#", "Bm7", "E", "F#m"]},
+    {"section": "Bridge", "lyrics": "Ochite iku to wakaette ita...", "chords": ["D", "C#m7", "Bm", "C#m", "D", "C#7"]}
+  ]
+}

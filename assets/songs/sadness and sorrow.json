@@ -1,0 +1,16 @@
+{
+  "title": "Sadness and Sorrow",
+  "instrument": "violin",
+  "bpm": 80,
+  "tracks": [
+    {
+      "hand": "right",
+      "notes": [
+        {"note": "B4", "start_beat": 0.0, "duration": 2.0},
+        {"note": "A4", "start_beat": 2.0, "duration": 1.0},
+        {"note": "G4", "start_beat": 3.0, "duration": 1.0},
+        {"note": "E4", "start_beat": 4.0, "duration": 4.0}
+      ]
+    }
+  ]
+}

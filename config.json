@@ -1,0 +1,10 @@
+{
+  "ui_opacity": 0.6,
+  "font_scale": 0.55,
+  "show_skeleton": false,
+  "mirror": true,
+  "sound_feedback": true,
+  "show_gesture_hints": true,
+  "stability_threshold": 0.9000000000000001,
+  "global_cooldown": 0.4
+}

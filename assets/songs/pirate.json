@@ -1,0 +1,17 @@
+{
+  "title": "He's a Pirate",
+  "instrument": "violin",
+  "bpm": 140,
+  "tracks": [
+    {
+      "hand": "right",
+      "notes": [
+        {"note": "D4", "start_beat": 0.0, "duration": 0.5},
+        {"note": "D4", "start_beat": 0.5, "duration": 0.5},
+        {"note": "D4", "start_beat": 1.0, "duration": 1.0},
+        {"note": "F4", "start_beat": 2.0, "duration": 0.5},
+        {"note": "G4", "start_beat": 2.5, "duration": 0.5}
+      ]
+    }
+  ]
+}

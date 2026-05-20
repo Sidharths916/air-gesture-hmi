@@ -1,0 +1,18 @@
+{
+  "title": "Twinkle Twinkle",
+  "bpm": 120,
+  "tracks": [
+    {
+      "hand": "right",
+      "notes": [
+        {"note": "C4", "start_beat": 0.0, "duration": 0.5},
+        {"note": "C4", "start_beat": 0.5, "duration": 0.5},
+        {"note": "G4", "start_beat": 1.0, "duration": 0.5},
+        {"note": "G4", "start_beat": 1.5, "duration": 0.5},
+        {"note": "A4", "start_beat": 2.0, "duration": 0.5},
+        {"note": "A4", "start_beat": 2.5, "duration": 0.5},
+        {"note": "G4", "start_beat": 3.0, "duration": 1.0}
+      ]
+    }
+  ]
+}

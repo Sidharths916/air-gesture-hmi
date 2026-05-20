@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Virtual environment
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Logs
+gesture_log.txt
+*.log
+
+# Trained models (use Releases)
+models/*.pkl
+data/processed/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Private
+assets/easter.mp4
+assets/easter.mp3
+
+# Compiled
+*.exe
+*.msi
+Output/

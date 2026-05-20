@@ -1,0 +1,12 @@
+{
+  "title": "Cha-La Head-Cha-La",
+  "structure": ["Intro", "Verse 1", "Verse 2", "Pre-Chorus", "Chorus", "Outro"],
+  "full_progression": [
+    {"section": "Intro", "chords": ["E", "D", "E", "D", "C"]},
+    {"section": "Verse 1", "lyrics": "Hikaru kumo tsukinuke Fly Away...", "chords": ["E", "D", "C", "G", "B"]},
+    {"section": "Verse 2", "lyrics": "Sora wo kyuukouka JETTO KOSUTAA...", "chords": ["E", "D", "C", "G", "B"]},
+    {"section": "Pre-Chorus", "lyrics": "Toketa koori no naka ni...", "chords": ["C#m", "B", "E", "D", "C", "B"]},
+    {"section": "Chorus", "lyrics": "Cha-la Head-cha-la!", "chords": ["G", "A", "G", "A", "D", "G", "Bm", "G", "D", "Em", "C", "A"]},
+    {"section": "Outro", "lyrics": "Sparking!", "chords": ["A", "Bb", "C", "D"]}
+  ]
+}
