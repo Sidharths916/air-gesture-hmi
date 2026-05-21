@@ -20,21 +20,22 @@ A real-time gesture-based HCI system using MediaPipe hand tracking, trajectory a
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
-* ✍️ Real-time air-writing recognition (A–Z)
-* 🖱️ Gesture-controlled virtual mouse
-* 🎨 Transparent desktop drawing overlay
-* ⌨️ Gesture-controlled on-screen keyboard
-* 🎵 Virtual piano, guitar, and violin interaction
-* ⚡ Real-time system shortcut gestures
-* 🧠 Hybrid RF + DTW recognition pipeline
-* 📦 CPU-only execution — no GPU required
-* 🖨️ STL / OBJ 3D export from drawings
-* 🔒 User handover / lock protection system
+- ✍️ Real-time air-writing recognition (A–Z)
+- 🖱️ Gesture-controlled virtual mouse
+- 🎨 Transparent desktop drawing overlay
+- ⌨️ Gesture-controlled on-screen keyboard
+- 🎵 Virtual piano, guitar, and violin interaction
+- ⚡ Real-time system shortcut gestures
+- 🧠 Hybrid RF + DTW recognition pipeline
+- 📦 CPU-only execution — no GPU required
+- 🖨️ STL / OBJ 3D export from drawings
+- 🔒 User handover / lock protection system
 
 ---
-## 🎥 Demo
+
+# 🎥 Demo
 
 [![Demo Video](https://img.shields.io/badge/Watch-Demo-red?logo=youtube)](#)
 
@@ -70,17 +71,17 @@ A real-time gesture-based HCI system using MediaPipe hand tracking, trajectory a
 
 ---
 
-## 🧠 Project Overview
+# 🧠 Project Overview
 
 Air Gesture HMI is a touchless human-computer interaction system that translates mid-air hand gestures into real-time desktop interaction using computer vision and machine learning.
 
 The system combines:
 
-* **MediaPipe Hands** for 21-point 3D hand landmark tracking
-* **Rule-based gesture recognition** for interaction control
-* **Random Forest classification** for air-writing recognition
-* **Dynamic Time Warping (DTW)** for trajectory similarity matching
-* **Real-time desktop integration** using PyAutoGUI, Pynput, and Win32 APIs
+- **MediaPipe Hands** for 21-point 3D hand landmark tracking
+- **Rule-based gesture recognition** for interaction control
+- **Random Forest classification** for air-writing recognition
+- **Dynamic Time Warping (DTW)** for trajectory similarity matching
+- **Real-time desktop interaction** using PyAutoGUI, Pynput, and Win32 APIs
 
 The application runs entirely on CPU using a standard webcam.
 
@@ -88,23 +89,23 @@ The application runs entirely on CPU using a standard webcam.
 
 # 📊 Performance
 
-| Metric                      | Value        |
-| --------------------------- | ------------ |
-| Letter recognition accuracy | **98.88%**   |
-| Letter classes              | 26 (A–Z)     |
-| Random Forest estimators    | 200          |
-| Feature count               | 13           |
-| Average FPS                 | **33.6 FPS** |
-| Average latency             | **29.7 ms**  |
-| Runtime hardware            | CPU only     |
-| GPU required                | ❌ No         |
+| Metric | Value |
+|---|---|
+| Letter recognition accuracy | **98.88%** |
+| Letter classes | 26 (A–Z) |
+| Random Forest estimators | 200 |
+| Feature count | 13 |
+| Average FPS | **33.6 FPS** |
+| Average latency | **29.7 ms** |
+| Runtime hardware | CPU only |
+| GPU required | ❌ No |
 
 ### Benchmark Environment
 
-* Windows 11 (64-bit)
-* Python 3.10
-* Standard USB webcam
-* CPU-only execution
+- Windows 11 (64-bit)
+- Python 3.10
+- Standard USB webcam
+- CPU-only execution
 
 ---
 
@@ -124,7 +125,7 @@ RF + DTW Recognition Pipeline
 Mode Router
      ↓
 Desktop Interaction / Audio / 3D Export
-```
+````
 
 ---
 
@@ -151,12 +152,21 @@ pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
-## 4. Download Trained Model
+## 4. Extract Trained Model
 
-Download `letter_recognizer.pkl` from GitHub Releases and place it inside:
+Extract:
+
+```text
+models/letter_recognizer.zip
+```
+
+inside the `models/` directory.
+
+Final structure:
 
 ```text
 models/
+└── letter_recognizer.pkl
 ```
 
 ## 5. Run
@@ -185,17 +195,18 @@ python main.py
 ```text
 air-gesture-hmi/
 │
-├── main.py                    # Core application loop
-├── piano_FINALv4.py           # Piano module
-├── guitar_FINALv4.py          # Guitar module
-├── violin_REFACTOREDv2.py     # Violin module
+├── main.py
+├── piano_FINALv4.py
+├── guitar_FINALv4.py
+├── violin_REFACTOREDv2.py
 │
-├── assets/                    # Media assets
-├── data/                      # User-generated drawings
-├── models/                    # Trained ML models
+├── assets/
+├── data/
+├── models/
+│   └── letter_recognizer.zip
 │
-├── config.json                # Runtime settings
-├── requirements.txt           # Python dependencies
+├── config.json
+├── requirements.txt
 └── README.md
 ```
 
@@ -205,13 +216,12 @@ air-gesture-hmi/
 
 ## ✏️ Draw Mode
 
-Transparent desktop overlay with:
+Transparent desktop drawing overlay featuring:
 
 * fingertip drawing
 * colour switching
 * eraser support
-* 3D export pipeline
-* STL / OBJ generation
+* STL / OBJ export
 * anaglyph rendering
 
 ### Export Support
@@ -227,15 +237,15 @@ Transparent desktop overlay with:
 
 Real-time air-writing recognition system.
 
-### Pipeline
+### Recognition Pipeline
 
 1. Trajectory capture
 2. Stroke normalisation
 3. Feature extraction
-4. RF classification
+4. Random Forest classification
 5. DTW template matching
 6. Score fusion
-7. Real keyboard output
+7. Keyboard output
 
 ### Recognition Features
 
@@ -289,7 +299,6 @@ Gesture-controlled virtual instruments.
 * synthesized tones
 * harmonic layering
 * ADSR shaping
-* bow simulation
 * chord detection
 
 ---
@@ -339,12 +348,11 @@ Each trajectory is:
 
 13 geometric features are extracted including:
 
-* width / height
 * aspect ratio
 * path length
 * curvature
-* start / end coordinates
 * spatial density
+* start/end coordinates
 
 ## Stage 3 — Random Forest
 
@@ -372,7 +380,7 @@ RF probability and DTW similarity scores are fused for final prediction.
 ## Hardware
 
 * Standard webcam
-* CPU execution only
+* CPU-only execution
 
 ---
 
@@ -409,9 +417,9 @@ RF probability and DTW similarity scores are fused for final prediction.
 
 # ⚠️ Known Issues
 
-* Initial startup latency may occur during MediaPipe initialisation
+* Initial startup latency during MediaPipe warm-up
 * Transparent overlays are Windows-dependent
-* First camera frame may spike in latency during warm-up
+* First camera frame may briefly spike in latency
 
 ---
 
@@ -422,7 +430,7 @@ RF probability and DTW similarity scores are fused for final prediction.
 * CNN-based recognition comparison
 * Mobile deployment
 * Custom gesture recording
-* Embedded deployment (Raspberry Pi)
+* Embedded deployment
 
 ---
 
