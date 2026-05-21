@@ -37,18 +37,37 @@ A real-time gesture-based HCI system using MediaPipe hand tracking, trajectory a
 ## 🎥 Demo
 
 [![Demo Video](https://img.shields.io/badge/Watch-Demo-red?logo=youtube)](#)
-Draw mode
-![Demo](assets/Draw_Mode.gif)
-Write mode
-![Demo](assets/Write_Mode.gif)
-Mouse mode
-![Demo](assets/Mouse_Mode.gif)
-On Screen keyboard mode
-![Demo](assets/Osk_Mode.gif)
-Gesture mode
-![Demo](assets/Gesture_Mode.gif)
-Music mode
-![Demo](assets/Music_Mode.gif)
+
+### Draw mode
+<p align="center">
+  <img src="assets/Draw_mode.gif" width="800"/>
+</p>
+
+### Write mode
+<p align="center">
+  <img src="assets/Write_Mode.gif" width="800"/>
+</p>
+
+### Mouse mode
+<p align="center">
+  <img src="assets/Mouse_Mode.gif" width="800"/>
+</p>
+
+### On Screen Keyboard mode
+<p align="center">
+  <img src="assets/Osk_Mode.gif" width="800"/>
+</p>
+
+### Gesture mode
+<p align="center">
+  <img src="assets/Gesture_Mode.gif" width="800"/>
+</p>
+
+### Music mode
+<p align="center">
+  <img src="assets/Music_Mode.gif" width="800"/>
+</p>
+
 ---
 
 ## 🧠 Project Overview
