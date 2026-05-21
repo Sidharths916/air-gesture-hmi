@@ -1,1 +1,1 @@
-Download letter_recognizer.pkl from GitHub Releases and place it here. 
+Download letter_recognizer.zip from GitHub Releases, extract and place it here if not found in models. 
