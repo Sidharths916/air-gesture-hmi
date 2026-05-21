@@ -37,8 +37,7 @@ A real-time gesture-based HCI system using MediaPipe hand tracking, trajectory a
 ## 🎥 Demo
 
 [![Demo Video](https://img.shields.io/badge/Watch-Demo-red?logo=youtube)](#)
-
-![Demo](https://github.com/Sidharths916/air-gesture-hmi/assets/Mouse_mode.gif)
+![Demo](assets/Mouse_Mode.gif)
 ---
 
 ## 🧠 Project Overview
