@@ -125,7 +125,7 @@ RF + DTW Recognition Pipeline
 Mode Router
      ↓
 Desktop Interaction / Audio / 3D Export
-````
+```
 
 ---
 
@@ -141,7 +141,7 @@ cd air-gesture-hmi
 ## 2. Create Virtual Environment
 
 ```bash
-python -m venv venv
+py -3.10 -m venv venv
 venv\Scripts\activate
 ```
 
@@ -218,18 +218,29 @@ air-gesture-hmi/
 
 Transparent desktop drawing overlay featuring:
 
-* fingertip drawing
-* colour switching
-* eraser support
-* STL / OBJ export
-* anaglyph rendering
+- fingertip drawing
+- colour switching
+- eraser support
+- STL / OBJ export
+- anaglyph rendering
 
 ### Export Support
 
-* PNG
-* STL
-* OBJ + MTL + texture PNG
-* Anaglyph 3D image
+- PNG
+- STL
+- OBJ + MTL + texture PNG
+- Anaglyph 3D image
+
+### Gestures
+
+| Gesture | Action |
+|---|---|
+| ☝️ 1 finger | Draw with current colour |
+| ✌️ 2 fingers | Cycle to next colour |
+| 🤟 3 fingers | Save drawing |
+| 4 fingers | Clear canvas |
+| 🤙 Pinky | Toggle eraser |
+| 🖐️ Palm | Return to main menu |
 
 ---
 
@@ -249,10 +260,21 @@ Real-time air-writing recognition system.
 
 ### Recognition Features
 
-* 13 handcrafted geometric features
-* 64-point trajectory resampling
-* confidence threshold filtering
-* DTW similarity comparison
+- 13 handcrafted geometric features
+- 64-point trajectory resampling
+- confidence threshold filtering
+- DTW similarity comparison
+
+### Gestures
+
+| Gesture | Action |
+|---|---|
+| ☝️ 1 finger | Draw character stroke |
+| Hold still | Recognise and type character |
+| ✌️ 2 fingers | Space |
+| 🤟 3 fingers | Backspace |
+| 4 fingers | Clear stroke |
+| 🖐️ Palm | Return to main menu |
 
 ---
 
@@ -262,11 +284,23 @@ Gesture-controlled virtual mouse system.
 
 ### Supported Actions
 
-* cursor movement
-* left click
-* right click
-* drag / hold
-* scroll up/down
+- cursor movement
+- left click
+- right click
+- drag / hold
+- scroll up/down
+
+### Gestures
+
+| Gesture | Action |
+|---|---|
+| ☝️ Index only | Move cursor |
+| 💍 Ring only | Left click |
+| 🤙 Pinky only | Right click |
+| ✊ Fist | Toggle drag |
+| ✌️ 2 fingers | Scroll up |
+| 🤟 3 fingers | Scroll down |
+| 🖐️ Palm | Return to main menu |
 
 ---
 
@@ -276,11 +310,19 @@ Transparent gesture-controlled virtual keyboard.
 
 ### Features
 
-* fullscreen overlay
-* hover interaction
-* Z-depth press detection
-* static & dynamic modes
-* modifier key support
+- fullscreen overlay
+- hover interaction
+- Z-depth press detection
+- static & dynamic modes
+- modifier key support
+
+### Gestures
+
+| Gesture | Action |
+|---|---|
+| Hover + push forward | Press key |
+| Hover over MODE | Toggle input mode |
+| 🖐️ Palm | Return to main menu |
 
 ---
 
@@ -290,16 +332,33 @@ Gesture-controlled virtual instruments.
 
 ### Included Instruments
 
-* 🎹 Piano
-* 🎸 Guitar
-* 🎻 Violin
+- 🎹 Piano
+- 🎸 Guitar
+- 🎻 Violin
 
 ### Audio Features
 
-* synthesized tones
-* harmonic layering
-* ADSR shaping
-* chord detection
+- synthesized tones
+- harmonic layering
+- ADSR shaping
+- chord detection
+
+### Music Menu Gestures
+
+| Gesture | Action |
+|---|---|
+| ☝️ 1 finger | Piano |
+| ✌️ 2 fingers | Guitar |
+| 🤟 3 fingers | Violin |
+| 🖐️ Palm | Return to main menu |
+
+### Instrument Selection
+
+| Gesture | Action |
+|---|---|
+| 👍 | Free play |
+| 👌 | Song selection |
+| 🖐️ Palm | Cancel |
 
 ---
 
@@ -309,13 +368,13 @@ Maps gestures directly to system shortcuts.
 
 ### Examples
 
-| Gesture | Action       |
-| ------- | ------------ |
-| 👍      | Screenshot   |
-| 👌      | Save file    |
-| ✌️      | Alt + Tab    |
-| 🤟      | Zoom in      |
-| 🤙      | Browser back |
+| Gesture | Action |
+|---|---|
+| 👍 | Screenshot |
+| 👌 | Save file |
+| ✌️ | Alt + Tab |
+| 🤟 | Zoom in |
+| 🤙 | Browser back |
 
 ---
 
@@ -325,10 +384,19 @@ Basic user handover detection system using torso colour verification.
 
 ### Features
 
-* user verification
-* auto-lock on mismatch
-* auto-unlock on return
-* manual recalibration
+- user verification
+- auto-lock on mismatch
+- auto-unlock on return
+- manual recalibration
+
+### Controls
+
+| Action | Trigger |
+|---|---|
+| Auto-lock | Different user detected |
+| Auto-unlock | Original user returns |
+| Manual recalibration | Hold ✊ Fist |
+| Force recalibration | Press U key |
 
 ---
 
